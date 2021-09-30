@@ -1,0 +1,191 @@
+#cielo_volcan{
+    
+    animation: sismo 1s infinite;
+    animation-iteration-count: 23;
+    animation-delay: 5s;
+
+}
+#cielo_lava{
+    animation: sismo 1s infinite;
+    animation-iteration-count: 23;
+    animation-delay: 5s;
+
+}
+#cielo_ocultar_jenny{
+    opacity:0;
+    animation:ocultarjenny 18s;
+    animation-delay: 20s;
+}
+
+#cielo_alma_jenny{
+    opacity:0;
+
+    animation: almavolando 4s;
+    animation-delay: 21s;
+    
+
+}
+#cielo_ojos_asustados{
+    opacity:0;
+    transform: translateY(5px);
+    animation:ojos 20s;
+    animation-delay: 5s;
+
+}
+#cielo_ojos_tristes{
+    opacity:0;
+    transform: translateY(5px);
+    animation:ojos 10s;
+    animation-delay: 30s;
+
+}
+#cielo_ojos_felices{
+    opacity:0;
+
+    animation:ojos 10s;
+    transform: translate(-6px,9px);
+
+    animation-delay: 41s;
+
+}
+#cielo_dialogo1{
+    opacity:0;
+    animation: dialogo 6s;
+
+
+}
+#cielo_dialogo2{
+    opacity:0;
+
+    animation: dialogo 6s;
+    animation-delay: 7s;
+
+
+}
+#cielo_dialogo3{
+    opacity:0;
+
+    animation: dialogo 6s;
+    animation-delay: 17s;
+
+}
+#cielo_dialogo4{
+    opacity:0;
+    animation: dialogo 6s;
+    animation-delay: 30s;
+
+}
+#cielo_dialogo5{
+    opacity:0;
+
+    animation: dialogo 6s;
+    animation-delay: 39s;
+
+}
+
+#cielo_volcan_apagado{
+    opacity:0;
+    
+    transform: translate(3px,3px);
+    animation: volcanapagado 3s;
+    animation-delay: 26s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes volcanapagado {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes ocultarjenny {
+    0%{
+        opacity:0;
+
+    }
+
+    10%{
+        opacity: 1;
+    }
+
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+@keyframes almavolando {
+
+    0%{
+        transform:translate(-130px, 10px) ;
+        opacity:0.3;
+        
+    }
+
+    90%{
+        opacity:0.3;
+
+    }
+
+    100%{
+        transform: translate(10px, -200px) scale(1.5,1.5);
+        opacity:0;
+
+    }
+    
+}
+
+@keyframes ojos {
+    0%{
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes dialogo {
+    0%{
+        opacity:0;
+    }
+    20%{
+        opacity:1;
+    }
+
+    80%{
+        opacity:1;
+    }
+    0%{
+        opacity:0;
+    }
+}
+
+
+@keyframes sismo {
+    0%{
+        transform:translateX(0px);
+    }
+
+    40%{
+        transform:translateX(-10px);
+    }
+    
+    80%{
+        transform:translateX(10px);
+    }
+
+    100%{
+        transform:translateX(0px);
+    }
+}

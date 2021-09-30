@@ -1,0 +1,100 @@
+#alma_z{
+    opacity: 0;
+    animation:zzz 3s infinite;
+
+}
+
+#alma_alma{
+    opacity:0;
+    animation: almavolando 5s ;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+
+}
+
+#alma {
+      
+
+animation: closeup 5s;
+animation-delay: 2s;
+animation-fill-mode: forwards;
+
+
+}
+#alma_dialogo{
+    opacity: 0;
+    animation:  dialogoalma 2s;
+    animation-delay: 5s;
+    animation-fill-mode:forwards ;
+
+
+}
+
+@keyframes dialogoalma {
+    
+    0%{
+    opacity: 0;
+    
+    }
+
+
+    100%{
+        opacity: 1;
+        transform: translateY(-500px);
+
+     }
+}
+
+
+@keyframes closeup {
+
+    5%{
+       
+    }
+
+
+
+    100%{
+        transform: scale(1.5,1.5);
+        transform-origin: 60% -100%;
+
+     }
+
+}
+@keyframes almavolando {
+
+    5%{
+        opacity:0.3;
+    }
+
+
+
+    100%{
+        opacity: 0.3;
+        transform: translateY(-500px) ;
+
+     }
+
+}
+
+@keyframes zzz {
+
+    5%{
+        opacity:0;
+        transform: translate(-100px,200px) skew(0deg, 0deg);;
+    }
+
+
+
+    100%{
+        opacity: 1;
+        transform: translate(-100px,-100px) skew(15deg, 10deg);;
+
+     }
+
+}
+
+
+
+

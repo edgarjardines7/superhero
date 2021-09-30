@@ -1,0 +1,121 @@
+
+#casa{
+    transform:scale(1.9,1.9);
+    transform-origin: bottom;
+    animation: zoomout 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  
+
+}
+
+
+#casa_patas{
+ 
+
+    animation: zoomin 3s;
+    animation-fill-mode: forwards;
+}
+
+#casa_jenny{
+
+
+    animation: zoomin 3s;
+    animation-fill-mode: forwards;
+
+}
+
+#casa_pelota{
+
+
+    animation: pelotarebotando 3s;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+
+}
+
+#casa_dialogo1{
+    transform:translate(300px,0);
+    opacity: 0;
+    animation:mostrardialogo 5s;
+    /* animation-delay: 1s; */
+
+}
+
+#casa_dialogo2{
+    opacity: 0;
+    animation:mostrardialogo2 5s;
+    animation-delay: 4s;
+
+    animation-fill-mode: forwards;
+}
+
+@keyframes mostrardialogo2 {
+
+    5%{
+        opacity:0;
+    }
+
+
+
+    100%{
+        opacity: 1;
+     }
+
+}
+
+@keyframes mostrardialogo {
+
+    5%{
+        opacity:0;
+    }
+
+
+    80%{
+       opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+     }
+
+}
+
+
+@keyframes zoomin {
+
+    5%{
+        transform:scale(1,1);
+    }
+
+
+    100%{
+        transform:scale(1.1,1.1);
+    }
+
+}
+
+@keyframes pelotarebotando {
+
+    5%{
+        transform:scale(1,1);
+    }
+
+
+    100%{
+        transform:scale(1.1,1.1);
+    }
+
+}
+
+@keyframes zoomout{
+
+    5%{
+        transform:scale(1.9,1.9);
+    }
+
+
+    100%{
+        transform:scale(1,1);
+    }
+}

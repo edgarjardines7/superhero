@@ -1,0 +1,51 @@
+#regreso_z{
+    opacity: 0;
+    animation:zzz 3s infinite;
+    animation-iteration-count: 2;
+
+}
+
+#regreso_alma_regreso{
+    opacity:0;
+    animation: regresovolando 5s ;
+    animation-delay: 0s;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+
+
+}
+
+
+
+@keyframes dialogoregreso {
+    
+    0%{
+    opacity: 0;
+    
+    }
+
+
+    100%{
+        opacity: 1;
+        transform: translateY(-500px);
+
+     }
+}
+
+
+
+@keyframes regresovolando {
+
+    5%{
+        opacity:0.3;
+    }
+
+
+
+    100%{
+        opacity: 0.3;
+        transform: translateY(-500px) ;
+
+     }
+
+}

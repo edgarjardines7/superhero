@@ -1,0 +1,25 @@
+#motivos{
+    opacity: 0;
+    animation:mostrar 2s;
+    animation-fill-mode: forwards;
+
+}
+
+
+@keyframes mostrar {
+
+    5%{
+       
+    }
+
+
+
+    100%{
+        opacity: 1;
+        transform:scale(1.5,1.5);
+        transform-origin: center
+        ;
+     }
+
+}
+
